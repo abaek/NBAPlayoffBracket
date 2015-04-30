@@ -1,0 +1,55 @@
+.rating {
+    color: #a9a9a9;
+    margin: 0;
+    padding: 0;
+}
+ul.rating {
+    display: inline-block;
+}
+.rating li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 1px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.rating .filled {
+    color: blue;
+}
+
+.submitRating{
+  background-color: white;
+  color: black;
+  margin-top: 15px;
+}
+
+.addComment{
+  color:black;
+}
+
+.panel-body{
+  color:black;
+}
+
+.panel-primary{
+  width:30%;
+  display: inline-block;
+  float: left;
+  margin: 5px;
+}
+
+#myChart{
+  display: inline-block;
+  float: left;
+}
+
+#recentReviews{
+  margin-top:50px;
+  font-size: 30px;
+}
+
+.addRatingPage{
+  margin-left: 50px;
+}
+
