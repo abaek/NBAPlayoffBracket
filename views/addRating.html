@@ -1,0 +1,28 @@
+
+<div class="addRatingPage">
+<div class="page-header">
+<h1>Add a new Rating for {{productName}}</h1>
+</div>
+
+<div>
+	<div>
+	Category: {{category}}
+	</div>
+		<div>
+		Rating: 
+		<span ng-repeat="rating in ratings">
+        <span star-rating rating-value="rating.current" max="rating.max" on-rating-selected="getSelectedRating(rating)"></span>
+        </span>
+	</div>
+	<div>
+		Comments:
+		<div>
+		<textarea rows="4" cols="50" type="text" ng-model="comments" class="addComment"></textarea>
+		</div>
+	</div>
+	<div>
+		<button ng-click="addReview()" class="submitRating">Submit</button>
+	</div>
+
+</div>
+</div>
