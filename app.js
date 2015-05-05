@@ -5,6 +5,7 @@ var express = require('express');
 var path = require('path');
 var app = express();
 var bodyParser = require('body-parser');
+var routes = require('./routes/index');
 
 // View engine setup.
 app.set('views', path.join(__dirname, 'views'));
@@ -12,16 +13,6 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '')));
 
-// Render landing page.
-app.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
-});
-
-// Port listening.
-// app.set('port', process.env.PORT || 3000);
-// var server = app.listen(app.get('port'), function() {
-//   debug('Express server listening on port ' + server.address().port);
-// });
+app.use('/', routes);
 
 module.exports = app;
-
