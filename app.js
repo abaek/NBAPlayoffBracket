@@ -1,10 +1,9 @@
 #!/usr/bin/env node
+
 // Libraries.
 var express = require('express');
 var path = require('path');
-var http = require('http');
 var app = express();
-var debug = require('debug')('nba-playoff-bracket');
 
 // View engine setup.
 app.set('views', path.join(__dirname, 'views'));
@@ -17,7 +16,10 @@ app.get('/', function(req, res) {
 });
 
 // Port listening.
-app.set('port', process.env.PORT || 3000);
-var server = app.listen(app.get('port'), function() {
-  debug('Express server listening on port ' + server.address().port);
-});
+// app.set('port', process.env.PORT || 3000);
+// var server = app.listen(app.get('port'), function() {
+//   debug('Express server listening on port ' + server.address().port);
+// });
+
+module.exports = app;
+
