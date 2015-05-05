@@ -1,5 +1,5 @@
 angular.module('NBAPlayoffBracket')
-.controller('ProductController', ['$http', '$scope', '$location', '$modal', '$routeParams',
-function($http, $scope, $location, $modal, $routeParams){
+.controller('ProductController', ['$http', '$scope', '$location', '$routeParams',
+function($http, $scope, $location, $routeParams){
 
 }]);
