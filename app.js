@@ -12,6 +12,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.static(path.join(__dirname, '')));
 
+// Load page.
 app.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
 });
