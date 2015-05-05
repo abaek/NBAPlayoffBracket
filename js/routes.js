@@ -1,8 +1,8 @@
-var myRatings = angular.module('myRatings', ['ngRoute'])
+var NBAPlayoffBracket = angular.module('NBAPlayoffBracket', ['ngRoute'])
   .config(['$routeProvider',
     function($routeProvider) {
       $routeProvider
-        .when('/product/:name?/:category?', {
+        .when('/product', {
           templateUrl: '/views/product.html',
           controller: 'ProductController'
         })
