@@ -4,7 +4,7 @@
 ## Description
 NBA Playoff Bracket Pool. Participate with friends and predict every game!
 
-See the website at [http://nbaplayoffbracket.herokuapp.com](http://nbaplayoffbracket.herokuapp.com)
+See the website at [http://nba-playoff-bracket.herokuapp.com](http://nba-playoff-bracket.herokuapp.com)
 
 ## Credits
     Andy Baek (abaek) - Full stack developer
