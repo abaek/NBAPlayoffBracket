@@ -4,7 +4,6 @@
 var express = require('express');
 var path = require('path');
 var app = express();
-var routes = require('./routes/index');
 var debug = require('debug')('nba-playoff-bracket');
 
 // View engine setup.
@@ -17,10 +16,9 @@ app.get('/', function(req, res) {
   res.render('index', { title: 'Express' });
 });
 
+// Set port and listen
 app.set('port', process.env.PORT || 3000);
 
 var server = app.listen(app.get('port'), function() {
   debug('Express server listening on port ' + server.address().port);
 });
-
-module.exports = app;
